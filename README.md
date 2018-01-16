@@ -9,9 +9,12 @@ You're reading it! and here is a link to my [project code](https://github.com/es
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
-I used the length command to calculate number of samples, .shape to find shape of image & unique to find number of class Labels of the traffic signs data set:
+##I used the "length" command to calculate number of samples
+##.shape to find shape of image & 
+##unique to find number of class Labels of the traffic signs data set:
 image_shape = X_train[0].shape
 unique, counts = np.unique(y_train, return_counts=True)
+
 *Number of training examples = 34799
 *Number of validation examples = 4410
 *Number of testing examples = 12630
@@ -22,7 +25,7 @@ Number of classes = 43
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data class labels are distrubuted.
 
-![Class Label distributions][solution-images/histogram.png]
+![Class Label distributions](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/solution-images/histogram.png)
 The histogram shows unevenly distributed samples of each class. the max number samples for any class is ~2000 while the minimum is <200, this provides for an unbalanced data set.
 
 ### Design and Test a Model Architecture
