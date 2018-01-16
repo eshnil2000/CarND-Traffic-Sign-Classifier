@@ -54,7 +54,10 @@ As a last step, I normalized the image data by subtracting 128 from each pixel a
 I decided to generate additional data because after all these steps, the accuracy on the validation data set was <93%.
 
 To add more data to the the data set, I used the following techniques: 
-I calculated the maximum number of samples of the 43 labels. I then eqaulized the number of samples for each anf every Class label to that maximum value (in my case, ~2000 samples each) to make for a uniformly distributed sample size of each label.
+I calculated the maximum number of samples of the 43 labels. I then eqaulized the number of samples for each and every Class label to that maximum value (in my case, ~2000 samples each) to make for a uniformly distributed sample size of each label.
+
+The technique I used to augment the data set of each class label was very simple:
+I created an array of indices for each class Label (for example, class Label "0" had 180 samples, so I gathered those 180 indices). I then took the difference between the maximum number of samples in ny class label (in this case, 2000) and found the difference (1820). I then uniformly randomly sampled those 180 images 1800 times and appended 1800 more samples of that class, and appended the corresponding Label. I repeated this for each an every class to equalize the number of samples.
 
 This led to a 148% increase in the data set from about ~35k images to about ~85k images.
 
