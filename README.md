@@ -3,7 +3,7 @@
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/Traffic%20Classifier%20Solution.ipynb)
 
 ### Data Set Summary & Exploration
 
