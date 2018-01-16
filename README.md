@@ -5,6 +5,9 @@
 
 You're reading it! and here is a link to my [project code](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/Traffic%20Classifier%20Solution.ipynb)
 
+An HTML version of the Python notebook can be found here:
+[HTML file](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/Traffic%20Classifier%20Solution.html)
+
 ### Data Set Summary & Exploration
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
