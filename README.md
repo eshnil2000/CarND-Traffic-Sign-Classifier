@@ -123,14 +123,12 @@ The training seemed to complete in a reasonable amount of time on my Mac laptop 
 
 Here are five German traffic signs that I found on the web:
 
-![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/1.png)
-![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/2.png)
-![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/3.png)
 ![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/4.png)
+![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/1.png)
+![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/3.png)
+![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/6.png)
 ![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/5.png)
 
-
-The first image might be difficult to classify because ...
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
