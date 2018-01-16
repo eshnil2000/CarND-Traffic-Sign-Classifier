@@ -49,18 +49,20 @@ BEFORE:
 AFTER:
 ![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/solution-images/gray.png)
 
-As a last step, I normalized the image data because ...
+As a last step, I normalized the image data by subtracting 128 from each pixel and dividing by 128, to roughly position the image data within a range of [-1,1] to reduce variations, make it easier to train. Normalized data has shown to perform better than data that has high variations in some variables versus others.
 
-I decided to generate additional data because ... 
+I decided to generate additional data because after all these steps, the accuracy on the validation data set was <93%.
 
-To add more data to the the data set, I used the following techniques because ... 
+To add more data to the the data set, I used the following techniques: 
+I calculated the maximum number of samples of the 43 labels. I then eqaulized the number of samples for each anf every Class label to that maximum value (in my case, ~2000 samples each) to make for a uniformly distributed sample size of each label.
 
-Here is an example of an original image and an augmented image:
+This led to a 148% increase in the data set from about ~35k images to about ~85k images.
 
-![alt text][image3]
+Here is an example of an CLass label distribution histogram after augmenting with this additional data:
 
-The difference between the original data set and the augmented data set is the following ... 
+![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/solution-images/histogram_augmented.png)
 
+Surprisingly, even without advanced data augmentation techniques, this simple technique was able to boost the accuracy above the 93% mark.
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
