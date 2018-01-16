@@ -39,11 +39,15 @@ The histogram shows unevenly distributed samples of each class. the max number s
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale because ...
+As a first step, I decided to convert the images to grayscale to reduce the training complexity/ time, also previous papers have shown grayscale images effective for training Traffic Signs.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+BEFORE:
+![Color Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/solution-images/rgb.png)
+
+AFTER:
+![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/solution-images/gray.png)
 
 As a last step, I normalized the image data because ...
 
