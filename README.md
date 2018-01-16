@@ -65,7 +65,7 @@ Here is an example of an CLass label distribution histogram after augmenting wit
 
 ![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/solution-images/histogram_augmented.png)
 
-Surprisingly, even without advanced data augmentation techniques, this simple technique was able to boost the accuracy above the 93% mark.
+Surprisingly, even without advanced data augmentation techniques, this simple technique was able to boost the accuracy above the 93% mark. To increase the accuracy of the validation set even further, one could try out more sophisticated Data Augmentation techniques like rotating images, blurring images, linear translating images,etc to add to the number of samples. 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
