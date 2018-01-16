@@ -133,34 +133,32 @@ Here are five German traffic signs that I found on the web:
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
+![Grayscale Image](https://github.com/eshnil2000/CarND-Traffic-Sign-Classifier/blob/master/web-images/classify.png)
+
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| No Vehicles     		| Speed Limit 50km/h   									| 
+| Ahead Only     			| Ahead Only 										|
+| Speed Limit 30km/h			| Speed Limit 30km/h										|
+| General caution      		| General caution					 				|
+| Go straight or left			| Go straight or left      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 91%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+For each of the images, the model was surprisingly 100% confident in it's prediction (including the first image, which ws incorrectly predicted)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
+TopKV2(values=array([[ 1.,  0.,  0.,  0.,  0.],
+       [ 1.,  0.,  0.,  0.,  0.],
+       [ 1.,  0.,  0.,  0.,  0.],
+       [ 1.,  0.,  0.,  0.,  0.],
+       [ 1.,  0.,  0.,  0.,  0.]], dtype=float32), indices=array([[ 2,  0,  1,  3,  4],
+       [35,  0,  1,  2,  3],
+       [ 1,  0,  2,  3,  4],
+       [18,  0,  1,  2,  3],
+       [37,  0,  1,  2,  3]], dtype=int32))
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
