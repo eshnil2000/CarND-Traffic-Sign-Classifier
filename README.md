@@ -9,17 +9,24 @@ You're reading it! and here is a link to my [project code](https://github.com/es
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
-##I used the "length" command to calculate number of samples
-##.shape to find shape of image & 
-##unique to find number of class Labels of the traffic signs data set:
+I used the "length" command to calculate number of samples
+
+.shape to find shape of image & 
+
+unique to find number of class Labels of the traffic signs data set:
+
 image_shape = X_train[0].shape
 unique, counts = np.unique(y_train, return_counts=True)
 
 *Number of training examples = 34799
+
 *Number of validation examples = 4410
+
 *Number of testing examples = 12630
+
 *Image data shape = (32, 32, 3)
-Number of classes = 43
+
+*Number of classes = 43
 
 #### 2. Include an exploratory visualization of the dataset.
 
