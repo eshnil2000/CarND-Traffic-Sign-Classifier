@@ -155,6 +155,17 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 91%.
 
+I thought about 2 items: 
+What if the images are not bright enough? will it have an impact on classification of the images?
+What if the images are to zoom-in or zoom-out?
+
+In the event that images are not bright enough, it would be easy for the network to mix up similar looking signs (like speed liimt 30, speed limit 50, etc) due to lack of distinct enough features. 
+The Softmax probabilities in such a situation would probably be more "confused" and probabilities more diffused across multiple classes, in contrast to the situation where images are clear/ bright, softmax probabilities would be close to 1 for the most likely class.
+
+In the event that images are zoomed in/out, this would again confuse the model, due to the filter sizes being set at 5x5 and 3x3 in the Convolution section of the models. Zooming in and out images would then have a different effect on the filter performance (filters would probably be less effective in the zoomed out/in case due to either too many features being picked up by a filter (zoom out case) or not enough features picked up (zoom in case).
+
+
+
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 For each of the images, the model was surprisingly 100% confident in it's prediction (including the first image, which ws incorrectly predicted)
 
