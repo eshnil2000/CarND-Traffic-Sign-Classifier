@@ -114,6 +114,11 @@ My final model results were:
 * validation set accuracy of 93.3%
 * test set accuracy of 91.2%
 
+#### PROJECT RESUBMISSION: Validation accuracy increased to 94.3%, Test set accuracy increased to 93.4%!
+* Key changes: I increased the augmented data set by about 30% uniformly across all classes, increased the Epochs to 60 and changed the batch size to 200.
+* I experimented with modifying the images with random small changes (translation, rotation, brightness, etc) , and I also played with the LeNet Architecture, adding in Convolution layers. I did not notice dramatic increase in accuracy, and with the increased data sizes, training on my CPU was taking >30mins. Time to switch to GPU for the next project.
+
+
 I went with the LeNet architecture, because right from the outset, it seemed to give a good accuracy of >70%.
 Since the test set & unseen images also gave pretty good accuracy, I could conclude reasonably well that the model was not overfitted to the data set (even with the augmented data).
 
